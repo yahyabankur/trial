@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Add Property - Admin</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <h1 style="color: white;">Admin - Add Property</h1>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 50px;">
+    <h2>Add a New Property</h2>
+    <form id="addPropertyForm" style="max-width: 500px;">
+      
+      <!-- Property Title -->
+      <label for="propertyTitle">Property Title</label>
+      <input
+        type="text"
+        id="propertyTitle"
+        name="propertyTitle"
+        placeholder="e.g. Modern Apartment with Sea View"
+        required
+      />
+
+      <!-- Price -->
+      <label for="propertyPrice">Price</label>
+      <input
+        type="text"
+        id="propertyPrice"
+        name="propertyPrice"
+        placeholder="e.g. $34,900 or RS 3,500,900"
+        required
+      />
+
+      <!-- Status (For Rent or For Sale) -->
+      <label for="propertyStatus">Status</label>
+      <select id="propertyStatus" name="propertyStatus" required>
+        <option value="rent">For Rent</option>
+        <option value="sale">For Sale</option>
+      </select>
+
+      <!-- Payment Type -->
+      <label for="propertyPaymentType">Payment Type</label>
+      <select id="propertyPaymentType" name="propertyPaymentType">
+        <option value="month">/Month</option>
+        <option value="full">Full Price</option>
+      </select>
+
+      <!-- Location -->
+      <label for="propertyLocation">Location</label>
+      <input
+        type="text"
+        id="propertyLocation"
+        name="propertyLocation"
+        placeholder="e.g. Belmont Gardens, Chicago"
+        required
+      />
+
+      <!-- Short Description -->
+      <label for="propertyDescription">Description</label>
+      <textarea
+        id="propertyDescription"
+        name="propertyDescription"
+        placeholder="Short description of the property"
+        rows="4"
+        required
+      ></textarea>
+
+      <!-- Bedrooms -->
+      <label for="bedrooms">Bedrooms</label>
+      <input
+        type="number"
+        id="bedrooms"
+        name="bedrooms"
+        placeholder="e.g. 3"
+        required
+      />
+
+      <!-- Bathrooms -->
+      <label for="bathrooms">Bathrooms</label>
+      <input
+        type="number"
+        id="bathrooms"
+        name="bathrooms"
+        placeholder="e.g. 2"
+        required
+      />
+
+      <!-- Square Ft -->
+      <label for="squareFt">Square Ft</label>
+      <input
+        type="number"
+        id="squareFt"
+        name="squareFt"
+        placeholder="e.g. 3450"
+        required
+      />
+
+      <!-- Property Image Upload -->
+      <label for="propertyImageFile">Property Image</label>
+      <input
+        type="file"
+        id="propertyImageFile"
+        name="propertyImageFile"
+        accept="image/*"
+        required
+      />
+
+      <!-- Agent Name -->
+      <label for="agentName">Agent Name</label>
+      <input
+        type="text"
+        id="agentName"
+        name="agentName"
+        placeholder="e.g. William Seklo"
+        required
+      />
+
+      <!-- Agent Title -->
+      <label for="agentTitle">Agent Title</label>
+      <input
+        type="text"
+        id="agentTitle"
+        name="agentTitle"
+        placeholder="e.g. Estate Agents"
+      />
+
+      <!-- Agent Image (Optional) -->
+      <label for="agentImage">Agent Image</label>
+      <input
+        type="file"
+        id="agentImage"
+        name="agentImage"
+        accept="image/*"
+      />
+
+      <br /><br />
+      <button type="submit" class="btn">Add Property</button>
+    </form>
+  </main>
+
+  <script src="./assets/js/addProperty.js"></script>
+</body>
+</html>
